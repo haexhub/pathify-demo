@@ -6,6 +6,8 @@ The component components/demo/index.vue is responsible, for managing the state i
 
 At the end, I have to import all the states in the normal store directory and make them accessable to the whole application. This could be generated later.
 
+The problem I have with this solution is, that I'm not able to access the whole [context](https://nuxtjs.org/api/context) of nuxt in demoState.
+
 ## Build Setup
 
 ```bash
