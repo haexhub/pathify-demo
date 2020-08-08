@@ -21,9 +21,6 @@ export default Vue.extend({
 , computed: {
     hello: sync('hello')
   }
-, mounted () {
-    //@ts-ignore
-    //this.hello = this.$store.sync('hello')
-  }
+
 })
 </script>
