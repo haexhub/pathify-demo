@@ -14,9 +14,7 @@ import { get, sync } from 'vuex-pathify'
 
 export default Vue.extend({
   
-  data: () => ({
-    //hello: 'empty'
-  })
+  data: () => ({ })
 
 , computed: {
     hello: sync('hello')
