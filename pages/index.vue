@@ -10,10 +10,9 @@
       md6
     >
       <demo />
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
-      </div>
+
+      {{ $store.get('hello') }}
+     
     </v-flex>
   </v-layout>
 </template>
@@ -29,5 +28,7 @@ export default {
     VuetifyLogo,
     Demo
   }
+
+
 }
 </script>

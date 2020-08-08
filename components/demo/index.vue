@@ -1,21 +1,29 @@
 <template>
   <div>
-    {{ hello }}
+    <v-text-field
+      v-model='hello'
+    />
+ 
   </div>
 </template>
 
 <script lang='ts'>
 
 import Vue from 'vue'
+import { get, sync } from 'vuex-pathify'
 
 export default Vue.extend({
   
   data: () => ({
-    hello: 'empty'
+    //hello: 'empty'
   })
 
+, computed: {
+    hello: sync('hello')
+  }
 , mounted () {
-    this.hello = this.$store.get('hello')
+    //@ts-ignore
+    //this.hello = this.$store.sync('hello')
   }
 })
 </script>
